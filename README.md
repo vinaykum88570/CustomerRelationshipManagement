@@ -48,7 +48,7 @@ This design improves maintainability, scalability, and separation of concerns.
 
 <b>🔹 Entity Layer:</b><br>
 
-I created a Customer entity class mapped to a customers table using JPA annotations like @Entity and @Table.
+I created a Customer entity class mapped to a customers table using JPA annotations like @Entity and @Table.<br>
 •	@Id with @GeneratedValue is used for primary key <br>
 •	Fields like firstName, lastName, email, mobileNumber, and age are mapped to columns <br>
 This allows Hibernate to automatically map Java objects to database records.
