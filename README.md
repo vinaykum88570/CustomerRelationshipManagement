@@ -9,6 +9,34 @@
 </p>
 
 <hr>
+<h2>🚀 Project Showcase (Customer Relationship Management - CRM)</h2>
+
+<ul>
+  <li>☕ Core Java</li>
+  <li>🔌 Spring Boot</li>
+  <li>📊 Spring Data JPA</li>
+  <li>🗄️ MySQL</li>
+  <li>💻 REST APIs</li>
+</ul>
+
+<b>✨ FEATURES:</b>
+<ul>
+  <li>➕ Add new customer records</li>
+  <li>📋 View all customer details</li>
+  <li>🔍 Search customers by name, email, and age</li>
+  <li>✏️ Update customer information</li>
+  <li>❌ Delete customer records</li>
+  <li>🔄 Full CRUD functionality</li>
+</ul>
+
+<p>
+📂 Repository: 
+<a href="https://github.com/vinaykum88570/CustomerRelationshipManagement" target="_blank">
+https://github.com/vinaykum88570/CustomerRelationshipManagement
+</a>
+</p>
+
+<hr>
 🔹 Architecture & Design
 The application follows a layered architecture, which includes:
 •	Controller Layer → Handles HTTP requests and exposes REST APIs 
@@ -55,36 +83,5 @@ Additionally, I created field-specific update APIs, like updating only email, mo
 
 
 
-
-
-
-<h2>🚀 Project Showcase (Customer Relationship Management - CRM)</h2>
-
-<ul>
-  <li>☕ Core Java</li>
-  <li>🔌 Spring Boot</li>
-  <li>📊 Spring Data JPA</li>
-  <li>🗄️ MySQL</li>
-  <li>💻 REST APIs</li>
-</ul>
-
-<b>✨ FEATURES:</b>
-<ul>
-  <li>➕ Add new customer records</li>
-  <li>📋 View all customer details</li>
-  <li>🔍 Search customers by name, email, and age</li>
-  <li>✏️ Update customer information</li>
-  <li>❌ Delete customer records</li>
-  <li>🔄 Full CRUD functionality</li>
-</ul>
-
-<p>
-📂 Repository: 
-<a href="https://github.com/vinaykum88570/CustomerRelationshipManagement" target="_blank">
-https://github.com/vinaykum88570/CustomerRelationshipManagement
-</a>
-</p>
-
-<hr>
 
 
