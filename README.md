@@ -10,53 +10,9 @@
 
 <hr>
 
-<h2>👨‍💻 About Me</h2>
-<ul>
-  <li>💻 Aspiring Java Backend Developer</li>
-  <li>🔌 Building REST APIs using Spring Boot</li>
-  <li>🗄️ Working with MySQL & Spring Data JPA</li>
-  <li>📊 Strong in Java, OOP, Collections & Streams API</li>
-  <li>🌱 Currently improving backend architecture & system design</li>
-  <li>⚡ Fun fact: I enjoy solving backend problems 😄</li>
-</ul>
 
-<hr>
 
-<h2>🛠️ Tech Stack</h2>
 
-<p align="center">
-<img src="https://skillicons.dev/icons?i=java,spring,mysql,html,css,js,git,github,vscode,eclipse" />
-</p>
-
-<h2>🧩 Frameworks & Libraries</h2>
-<ul>
-  <li>⚙️ Spring Boot</li>
-  <li>🔌 Spring Data JPA</li>
-  <li>🌐 Spring Web (REST APIs)</li>
-  <li>📊 Hibernate</li>
-  <li>📈 Java Streams API</li>
-  <li>📦 Java Collections Framework</li>
-</ul>
-
-<hr>
-
-<h2>🌐 Connect With Me</h2>
-<p align="center">
-  <!-- Replace with your real links -->
-  <a href="https://www.linkedin.com/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" />
-  </a>
-
-  <a href="https://github.com/">
-    <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github" />
-  </a>
-
-  <a href="mailto:your-email@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-red?style=for-the-badge&logo=gmail" />
-  </a>
-</p>
-
-<hr>
 
 <h2>🚀 Project Showcase (Customer Relationship Management - CRM)</h2>
 
@@ -87,10 +43,4 @@ https://github.com/vinaykum88570/CustomerRelationshipManagement
 
 <hr>
 
-<h2>💡 Future Goals</h2>
-<ul>
-  <li>🚀 Become a Full Stack Java Developer</li>
-  <li>🌐 Learn React for frontend development</li>
-  <li>☁️ Deploy applications on cloud (AWS)</li>
-  <li>📈 Improve DSA & System Design skills</li>
-</ul>
+
