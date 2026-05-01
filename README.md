@@ -37,20 +37,24 @@ https://github.com/vinaykum88570/CustomerRelationshipManagement
 </p>
 
 <hr>
-🔹 Architecture & Design
+<b>🔹 Architecture & Design:</b>
+
 The application follows a layered architecture, which includes:
 •	Controller Layer → Handles HTTP requests and exposes REST APIs 
 •	Service Layer → Contains business logic 
 •	Repository Layer → Handles database operations using Spring Data JPA 
 This design improves maintainability, scalability, and separation of concerns.
 <hr>
-🔹 Entity Layer
+
+<b>🔹 Entity Layer:</b>
+
 I created a Customer entity class mapped to a customers table using JPA annotations like @Entity and @Table.
 •	@Id with @GeneratedValue is used for primary key 
 •	Fields like firstName, lastName, email, mobileNumber, and age are mapped to columns 
 This allows Hibernate to automatically map Java objects to database records.
 <hr>
-🔹 Repository Layer
+<b>🔹 Repository Layer:</b>
+
 I used Spring Data JPA (JpaRepository), which provides built-in methods like:
 •	save() → insert/update 
 •	findAll() → fetch all records 
@@ -61,13 +65,15 @@ I also implemented derived query methods, such as:
 •	findByEmail() 
 These methods automatically generate SQL queries based on method names.
 <hr>
-🔹 Service Layer
+<b>🔹 Service Layer:</b>
+
 The service layer contains the core business logic.
 For example:
 •	In update operations, I first fetch the existing customer using getCustomerById(), update specific fields like email or mobile number, and then save it back using save() 
 •	This ensures data consistency and proper update handling 
 <hr>
-🔹 Controller Layer (REST APIs)
+<b>🔹 Controller Layer (REST APIs):</b>
+
 I created multiple REST endpoints using annotations like @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping.
 Some key APIs include:
 •	Insert Customer → /crm/insert 
