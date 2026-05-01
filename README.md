@@ -37,57 +37,51 @@ https://github.com/vinaykum88570/CustomerRelationshipManagement
 </p>
 
 <hr>
-<b>🔹 Architecture & Design:</b>
+<b>🔹 Architecture & Design:</b><br>
 
 The application follows a layered architecture, which includes:
-•	Controller Layer → Handles HTTP requests and exposes REST APIs 
-•	Service Layer → Contains business logic 
-•	Repository Layer → Handles database operations using Spring Data JPA 
+•	Controller Layer → Handles HTTP requests and exposes REST APIs <br>
+•	Service Layer → Contains business logic  <br>
+•	Repository Layer → Handles database operations using Spring Data JPA <br>
 This design improves maintainability, scalability, and separation of concerns.
 <hr>
 
-<b>🔹 Entity Layer:</b>
+<b>🔹 Entity Layer:</b><br>
 
 I created a Customer entity class mapped to a customers table using JPA annotations like @Entity and @Table.
-•	@Id with @GeneratedValue is used for primary key 
-•	Fields like firstName, lastName, email, mobileNumber, and age are mapped to columns 
+•	@Id with @GeneratedValue is used for primary key <br>
+•	Fields like firstName, lastName, email, mobileNumber, and age are mapped to columns <br>
 This allows Hibernate to automatically map Java objects to database records.
 <hr>
-<b>🔹 Repository Layer:</b>
+<b>🔹 Repository Layer:</b><br>
 
-I used Spring Data JPA (JpaRepository), which provides built-in methods like:
-•	save() → insert/update 
-•	findAll() → fetch all records 
-•	deleteById() → delete 
-I also implemented derived query methods, such as:
-•	findByFirstName() 
-•	findByAgeLessThanEqual() 
-•	findByEmail() 
+I used Spring Data JPA (JpaRepository), which provides built-in methods like: <br>
+•	save() → insert/update  <br>
+•	findAll() → fetch all records  <br>
+•	deleteById() → delete <br>
+I also implemented derived query methods, such as: <br>
+•	findByFirstName()  <br>
+•	findByAgeLessThanEqual() <br>
+•	findByEmail() <br>
 These methods automatically generate SQL queries based on method names.
 <hr>
-<b>🔹 Service Layer:</b>
+<b>🔹 Service Layer:</b> <br>
 
 The service layer contains the core business logic.
 For example:
-•	In update operations, I first fetch the existing customer using getCustomerById(), update specific fields like email or mobile number, and then save it back using save() 
-•	This ensures data consistency and proper update handling 
+•	In update operations, I first fetch the existing customer using getCustomerById(), update specific fields <br> like email or mobile number, and then save it back using save() <br>
+•	This ensures data consistency and proper update handling <br>
 <hr>
-<b>🔹 Controller Layer (REST APIs):</b>
+<b>🔹 Controller Layer (REST APIs):</b><br>
 
-I created multiple REST endpoints using annotations like @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping.
-Some key APIs include:
-•	Insert Customer → /crm/insert 
-•		
-•	Get All Customers → /crm/getAll 
-•	Get Customer By ID → /crm/{id} 
-•	Delete Customer → /crm/delete/{id} 
-•	Bulk Insert → /crm/insert/All 
-I also implemented search APIs, such as:
-•	Find by first name, last name, email 
-•	Find customers with age less than or equal 
-Additionally, I created field-specific update APIs, like updating only email, mobile number, or age, instead of updating the entire object.
-
-
-
-
-
+I created multiple REST endpoints using annotations like @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping.<br>
+Some key APIs include:<br>
+•	Insert Customer → /crm/insert <br>
+•	Get All Customers → /crm/getAll <br>
+•	Get Customer By ID → /crm/{id} <br>
+•	Delete Customer → /crm/delete/{id} <br>
+•	Bulk Insert → /crm/insert/All <br>
+I also implemented search APIs, such as:<br>
+•	Find by first name, last name, email <br>
+•	Find customers with age less than or equal <br>
+Additionally, I created field-specific update APIs, like updating only email, mobile number, or age, instead of updating the entire object.<br>
