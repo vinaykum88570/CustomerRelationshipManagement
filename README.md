@@ -9,6 +9,50 @@
 </p>
 
 <hr>
+🔹 Architecture & Design
+The application follows a layered architecture, which includes:
+•	Controller Layer → Handles HTTP requests and exposes REST APIs 
+•	Service Layer → Contains business logic 
+•	Repository Layer → Handles database operations using Spring Data JPA 
+This design improves maintainability, scalability, and separation of concerns.
+<hr>
+🔹 Entity Layer
+I created a Customer entity class mapped to a customers table using JPA annotations like @Entity and @Table.
+•	@Id with @GeneratedValue is used for primary key 
+•	Fields like firstName, lastName, email, mobileNumber, and age are mapped to columns 
+This allows Hibernate to automatically map Java objects to database records.
+<hr>
+🔹 Repository Layer
+I used Spring Data JPA (JpaRepository), which provides built-in methods like:
+•	save() → insert/update 
+•	findAll() → fetch all records 
+•	deleteById() → delete 
+I also implemented derived query methods, such as:
+•	findByFirstName() 
+•	findByAgeLessThanEqual() 
+•	findByEmail() 
+These methods automatically generate SQL queries based on method names.
+<hr>
+🔹 Service Layer
+The service layer contains the core business logic.
+For example:
+•	In update operations, I first fetch the existing customer using getCustomerById(), update specific fields like email or mobile number, and then save it back using save() 
+•	This ensures data consistency and proper update handling 
+<hr>
+🔹 Controller Layer (REST APIs)
+I created multiple REST endpoints using annotations like @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping.
+Some key APIs include:
+•	Insert Customer → /crm/insert 
+•		
+•	Get All Customers → /crm/getAll 
+•	Get Customer By ID → /crm/{id} 
+•	Delete Customer → /crm/delete/{id} 
+•	Bulk Insert → /crm/insert/All 
+I also implemented search APIs, such as:
+•	Find by first name, last name, email 
+•	Find customers with age less than or equal 
+Additionally, I created field-specific update APIs, like updating only email, mobile number, or age, instead of updating the entire object.
+
 
 
 
