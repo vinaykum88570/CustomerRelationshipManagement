@@ -80,7 +80,7 @@
 
 <p>
 📂 Repository: 
-<a href="https://github.com/vinaykum/CustomerRelationshipManagement" target="_blank">
+<a href="https://github.com/vinaykum88570/CustomerRelationshipManagement" target="_blank">
 https://github.com/vinaykum88570/CustomerRelationshipManagement
 </a>
 </p>
